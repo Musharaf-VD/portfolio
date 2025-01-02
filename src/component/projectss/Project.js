@@ -39,6 +39,7 @@ const Project = () => {
                             <p><GiBarbedStar id='icon'/>{projectinfo.projectdetail[0].para2}</p>
                             <p><GiBarbedStar id='icon'/>{projectinfo.projectdetail[0].para3}</p>
                             <p><GiBarbedStar id='icon'/>{projectinfo.projectdetail[0].para4}</p>
+                           
                         </div>
                     </div>
 
