@@ -1,0 +1,107 @@
+.project-container {
+    margin-top: 90px;
+    height: auto;
+}
+
+.projectheading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.allproject-container {
+    margin-top: 90px;
+}
+
+.projectheading-container h2 {
+    border: 2px solid aqua;
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: white;
+    text-shadow: 0 0 2px #0ef, 0 0 25px #0ef;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px #0ef, 0 0 25px #0ef;
+}
+
+/* Styles for Project 1 */
+.projectdetail-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid aqua;
+    box-shadow: 0 0 2px #0ef, 0 0 25px #0ef;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+
+.projectdetail-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid aqua;
+    box-shadow: 0 0 2px #0ef, 0 0 25px #0ef;
+    border-radius: 15px;
+    gap: 20px;
+}
+#icon{
+    box-shadow: 0 0 20px #0ef, 0 0 25px #0ef;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+
+.projectdetail-container1 img,
+.projectdetail-container2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid aqua; 
+}
+
+
+.projectbreif-container {
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.projectbreif-container h4 {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.projectbreif-container p {
+    padding: 0 10px;
+    color: white;
+}
+
+
+@media (max-width: 1100px) {
+    .projectdetail-container1,
+    .projectdetail-container2 {
+        flex-direction: column;
+        max-width: 90%;
+        padding: 20px;
+        border: 2px solid aqua; 
+    }
+
+    .projectdetail-container1 img,
+    .projectdetail-container2 img {
+        width: 60%;
+        height: auto;
+    }
+
+    .projectbreif-container p {
+        font-size: 14px;
+    }
+}

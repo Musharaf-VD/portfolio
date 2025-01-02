@@ -1,0 +1,109 @@
+
+.about-container {
+    margin-top: 90px;
+    padding: 20px;
+  }
+  
+  
+  .aboutheading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .aboutheading-container h2 {
+    border: 2px solid aqua;
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: white;
+    text-shadow: 0 0 2px #0ef, 0 0 25px #0ef;
+    text-transform: uppercase;
+    font-size: 2rem; 
+    box-shadow: 0 0 20px #0ef, 0 0 25px #0ef;
+  }
+  
+  
+  .aboutflex-container {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    gap: 20px;
+   border: none;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  }
+  
+  .aboutimg-container img{
+    
+    border: 2px solid white;
+    padding: 0 90px 90px 0;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    border:none;
+    
+  }
+  
+  .aboutpara-container > p {
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    padding: 20px;
+    max-width: 600px; 
+    text-indent: 25px; 
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 2px white, 0 0 25px white;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  
+  @media (max-width: 968px) {
+    .aboutflex-container {
+      flex-direction: column; 
+      align-items: center; 
+      margin-left:  0px;
+    }
+  
+    .aboutimg-container img {
+      max-width: 90%; 
+      margin-bottom: 20px;
+     overflow: auto;
+     margin-left: 20px;
+    }
+  
+    .aboutheading-container h2 {
+      font-size: 1.5rem;
+      padding: 10px 15px;
+    }
+  
+    .aboutpara-container > p {
+      font-size: 0.9rem;
+      text-indent: 20px; 
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutheading-container h2 {
+      font-size: 1.2rem; 
+      padding: 8px 10px;
+    }
+  
+    .aboutpara-container > p {
+      font-size: 0.8rem; 
+      line-height: 1.4;
+    }
+
+    .aboutimg-container img{
+      width: 300px;
+      height: 300px;
+      
+
+    }
+  }
+  

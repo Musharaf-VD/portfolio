@@ -1,0 +1,185 @@
+/* Base Styles */
+
+body {
+  margin: 0;
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+}
+
+.content-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center align for better responsiveness */
+  text-align: center; /* Center align all text */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.content-container > h2 {
+  font-size: 2rem; /* Scalable font size */
+  margin-bottom: 10px;
+}
+
+.content-container > h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.content-container > h3 span {
+  color: cyan;
+  text-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+.content-container > button {
+  border: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: black;
+  color: cyan;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  margin-top: 20px;
+  transition: 0.3s ease-in;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content-container > button:hover {
+  background-color: aqua;
+  color: black;
+  text-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+.socialmedia-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socialmedia-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.socialmedia-container a:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  width: 80%;
+  max-width: 1200px; /* Limit maximum width */
+  margin: 50px auto; /* Center align and add spacing */
+  padding: 20px;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  height: 400px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden; /* Ensure the image fits inside the container */
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  width: 300px;
+  height: 300px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Responsive Styles */
+@media (max-width: 1100px) {
+  .profile-container {
+    flex-direction: column-reverse;
+    width: 70%; /* Reduce width */
+    height: auto; /* Adapt height */
+    padding: 20px;
+  }
+
+  .content-container > h2 {
+    font-size: 1.8rem;
+  }
+
+  .content-container > h3 {
+    font-size: 1.2rem;
+  }
+
+  .img-container {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  .content-container > h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-container > h3 {
+    font-size: 1rem;
+  }
+
+  .img-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .socialmedia-container a {
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  .content-container > h2 {
+    font-size: 1.2rem;
+  }
+
+  .content-container > h3 {
+    font-size: 0.9rem;
+  }
+
+  .content-container > button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .img-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .socialmedia-container a {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+  }
+}

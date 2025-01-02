@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Arima:wght@100..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fascinate+Inline&family=Jaro:opsz@6..72&family=Noto+Sans+Mono:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.skill-container {
+    margin-top: 90px;
+}
+
+.skillheading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillheading-container h2 {
+    border: 2px solid aqua;
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: #ffffff;
+    text-shadow: 0 0 2px #0ef,
+        0 0 25px #0ef;
+        box-shadow: 0 0 20px #0ef, 0 0 25px #0ef;
+
+}
+
+.skilldetail-container {
+    border: 2px solid black;
+    width: 260px;
+    box-shadow: 0 0 2px #0ef,
+        0 0 25px #0ef;
+        margin-bottom: 10px;
+       max-height: 650px;
+        
+
+}
+
+.skilldetail-container > p{
+   font-family: '"Courier New", Courier, monospace';
+   text-transform: uppercase;
+   color: white;
+   text-align: justify;
+   padding: 8px;
+   text-indent: 45px;
+}
+
+.skilldetail-container>h2 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.skilldetail-container>img {
+    height: 200px;
+    width: 200px;
+}
+
+.language-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.icon{
+     box-shadow: 0 0 2px #0ef,
+        0 0 25px #0ef;
+}
+
+@media (max-width:768px){
+  .skilldetail-container img{
+    height:100px;
+    width: 100px;
+    position: relative;
+    left: 60px;
+  }
+  .skilldetail-container > p{
+    font-size: 15px;
+  }
+}

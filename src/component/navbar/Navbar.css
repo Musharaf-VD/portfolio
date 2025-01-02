@@ -1,0 +1,113 @@
+/* Navigation Section */
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav Bar */
+.nav-bar {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Toggle Button */
+.nav-toggle {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 1rem;
+  right: 1.8rem;
+  color: cyan;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 200;
+  box-sizing: border-box; 
+  padding: 0 0 8px 10px;
+ 
+  border-radius: 50%; 
+  text-align: justify; 
+  line-height: 40px; 
+  
+ 
+  transition: 0.3s ease-in-out;
+}
+.nav-toggle:hover {
+  border: 2px solid white;
+ background-color: black;
+ box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+ border: none;
+ color: white;
+}
+
+/* Nav Bar Items */
+.nav-bar h5 {
+  color: cyan;
+  padding: 0px 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border-radius: 15px;
+  text-shadow: 0 0 10px #0ef, 0 0 50px #0ef;
+  font-family: "Alata", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.nav-bar h5:hover {
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 30px;
+   
+
+
+  }
+
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    /* Hidden by default */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-bar.visible {
+    transform: translateX(0);
+  }
+
+  .nav-bar.hidden {
+    transform: translateX(100%);
+  }
+
+  .nav-bar h5 {
+    padding: 5px 100px;
+    font-size: 1.2rem;
+
+  }
+
+  .nav-bar h5:hover {
+    color: white;
+    text-shadow: 0 0 10px #0ef, 0 0 50px #0ef;
+  }
+}

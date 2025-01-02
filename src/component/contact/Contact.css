@@ -1,0 +1,151 @@
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  padding: 20px; 
+}
+
+.contactheading-container h2 {
+  border: 2px solid aqua;
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #ffffff;
+  text-shadow: 0 0 2px #0ef, 0 0 25px #0ef;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 0 20px #0ef, 0 0 25px #0ef;
+}
+
+.contactdetail-container {
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0 0 2px #0ef, 0 0 25px #0ef;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: #111; 
+}
+
+.contactimg-container img {
+  border-radius: 15px;
+  box-shadow: 0 0 2px #0ef, 0 0 25px #0ef;
+  max-width: 100%;
+  height: auto; 
+}
+
+.contactform-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contactform-container div {
+  margin-bottom: 20px;
+}
+
+.contactform-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.contactform-container input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.contactform-container input:hover {
+  box-shadow: 0 0 2px #0ef, 0 0 25px #0ef;
+}
+
+.submit-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button button {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #0ef;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button button:hover {
+  background-color: aqua;
+  box-shadow: 0 0 2px aqua, 0 0 25px aqua;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactdetail-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .contactimg-container {
+      text-align: center;
+  }
+
+  .contactimg-container img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .contactform-container {
+      width: 100%;
+  }
+
+  .contactform-container label {
+      font-size: 16px;
+  }
+
+  .contactform-container input {
+      font-size: 14px;
+  }
+
+  .submit-button button {
+      font-size: 16px;
+      padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactheading-container h2 {
+      font-size: 20px;
+      padding: 5px 15px;
+  }
+
+  .contactdetail-container {
+      padding: 15px;
+  }
+
+  .contactform-container input {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  .submit-button button {
+      font-size: 14px;
+      padding: 5px 10px;
+  }
+}
