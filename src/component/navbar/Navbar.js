@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa"; // Using icons for the toggle button
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({handleScrollToSkills}) => {
   const [isNavVisible, setNavVisible] = useState(false);
 
   const toggleNavbar = () => {
@@ -21,20 +21,20 @@ const Navbar = () => {
 
       {/* Navigation Bar */}
       <div className={`nav-bar ${isNavVisible ? "visible" : "hidden"}`}>
-        <Link to="home" smooth={true} onClick={toggleNavbar}>
-          <h5>Home</h5>
+        <Link to="home" smooth={true} duration={100}>
+          <h5 onClick={handleScrollToSkills}>Home</h5>
         </Link>
-        <Link to="skill" smooth={true} onClick={toggleNavbar}>
-          <h5>Skill</h5>
+        <Link to="skill" smooth={true} duration={100}>
+          <h5 onClick={handleScrollToSkills}>Skill</h5>
         </Link>
-        <Link to="about" smooth={true} onClick={toggleNavbar}>
-          <h5>About</h5>
+        <Link to="about" smooth={true}  duration={100}>
+          <h5 onClick={handleScrollToSkills}>About</h5>
         </Link>
-        <Link to="project" smooth={true} onClick={toggleNavbar}>
-          <h5>Project</h5>
+        <Link to="project" smooth={true}  duration={100}>
+          <h5 onClick={handleScrollToSkills}>Project</h5>
         </Link>
-        <Link to="contact" smooth={true} onClick={toggleNavbar}>
-          <h5>Contact Me</h5>
+        <Link to="contact" smooth={true}  duration={100}>
+          <h5 onClick={handleScrollToSkills}>Contact Me</h5>
         </Link>
       </div>
     </section>

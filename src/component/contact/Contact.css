@@ -8,6 +8,34 @@
   margin-top: 100px;
   padding: 20px; 
 }
+.socialmedia-container1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.socialmedia-container1 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.socialmedia-container1 a:hover {
+  background-color: aqua;
+  color: black;
+}
 
 .contactheading-container h2 {
   border: 2px solid aqua;
@@ -31,6 +59,14 @@
   padding: 50px;
   border-radius: 15px;
   background-color: #111; 
+  animation: contactanime 1s ease;
+}
+
+@keyframes contactanime {
+  0%{
+    transform: translateX(350px);
+  }
+  
 }
 
 .contactimg-container img {

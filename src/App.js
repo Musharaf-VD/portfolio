@@ -8,6 +8,7 @@ import Project from './component/projectss/Project';
 import Contact from './component/contact/Contact';
 
 function App() {
+  
   return (
     <div className ="my-portfolio">
      <Navbar/>
