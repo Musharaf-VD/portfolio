@@ -1,3 +1,4 @@
+import React from 'react';
 import { Element } from 'react-scroll'
 import './About.css'
 import aboutimg from '../asset/aboutpic.png';

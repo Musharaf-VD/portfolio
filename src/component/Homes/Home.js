@@ -1,3 +1,4 @@
+import React from 'react';
 import { Element } from 'react-scroll'
 import './Home.css'
 import img from '../asset/profilepic.png'
@@ -34,7 +35,7 @@ const handleDownload = () =>{
           <button onClick={handleDownload}>download cv</button>
         </div>
         <div className='img-container'>
-          <img src={img} />
+          <img src={img} alt='homeimage' />
         </div>
       </div>
 

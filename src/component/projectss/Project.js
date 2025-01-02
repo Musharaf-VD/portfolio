@@ -1,3 +1,4 @@
+import React from 'react';
 import { Element } from 'react-scroll'
 import './Project.css'
 import userform from '../asset/userform.png';
@@ -44,7 +45,7 @@ const Project = () => {
                     </div>
 
                     <div className='projectdetail-container2'>
-                        <img src={userform} height={500} width={500} />
+                        <img src={userform} height={500} width={500} alt='secondproject'/>
                         <div className='projectbreif-container'>
                             <h4>User Form</h4>
                             <p><GiBarbedStar id='icon'/>{projectinfo.projectdetail[1].para1}</p>

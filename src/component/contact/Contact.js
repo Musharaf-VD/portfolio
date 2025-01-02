@@ -1,3 +1,4 @@
+import React from 'react';
 import { Element } from 'react-scroll'
 import './Contact.css'
 import contactimg from '../asset/contactpic.png';

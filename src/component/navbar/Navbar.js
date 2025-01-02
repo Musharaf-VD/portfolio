@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa"; // Using icons for the toggle button

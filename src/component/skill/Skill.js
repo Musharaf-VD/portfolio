@@ -1,3 +1,4 @@
+import React from 'react';
 import { Element } from 'react-scroll'
 import './Skill.css'
 import html from '../asset/html.png'
