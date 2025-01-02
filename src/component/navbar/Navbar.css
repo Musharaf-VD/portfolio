@@ -93,6 +93,7 @@
     position: fixed;
     top: 20px;
     right: 30px;
+    
     height: 30vh;
     width: 50vw;
     background-color: black;
@@ -106,6 +107,7 @@
     transform: translateX(100%);
     /* Hidden by default */
     transition: transform 0.3s ease-in-out;
+   
   }
 
   .nav-bar.visible {
@@ -118,7 +120,7 @@
   }
 
   .nav-bar h5 {
-    padding: 5px 100px;
+    padding: 5px 10px;
     font-size: 1.0rem;
 
   }
@@ -132,10 +134,18 @@
 @media (max-width: 468px){
   .nav-bar h5 {
     padding: 5px 0px;
+    font-size: 1rem;
+    
   }
 
   .nav-bar.visible {
-    transform: translateX(-70px);
+    transform: translateX(-90px);
     }
+    .nav-bar{
+      position: relative;
+      left: 500px;
+    }
+
+    
 
 }
