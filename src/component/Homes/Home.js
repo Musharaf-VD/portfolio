@@ -5,13 +5,18 @@ import { FaInstagram } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
-import { useState,useEffect } from 'react';
+
 
 
 const Home = () => {
+const handleDownload = () =>{
+  const link = document.createElement("a");
+  link.href ="../asset/resume.pdf";
+  link.download="resume.pdf";
+  link.click();
+  
+}
 
-  
-  
   return (
     // 
     <Element id='home'>
@@ -26,7 +31,7 @@ const Home = () => {
             <a href="https://wa.me/918148130769?text=hi%20Musharaf%20can%20i%20talk%20with%20you" target="_blank" rel="noopener noreferrer"><ImWhatsapp /></a>
 
           </div>
-          <button>download cv</button>
+          <button onClick={handleDownload}>download cv</button>
         </div>
         <div className='img-container'>
           <img src={img} />
